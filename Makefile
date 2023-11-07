@@ -44,7 +44,7 @@ pipewire: ## pipewire audio server
 	systemctl --user enable --now pipewire pipewire-pulse wireplumber
 
 x: ## xorg server
-	$(LN) $(PWD)/xorg/.xinitrc $(HOME)/.xinitrc
+	$(LN) $(PWD)/config/xorg/.xinitrc $(HOME)/.xinitrc
 	sudo pacman -S xorg-server xorg-apps xorg-xinit ttf-dejavu
 
 bspwm: ## bspwm and sxhkd
