@@ -1,0 +1,18 @@
+alias gst="git status"
+alias glog="git log --graph --pretty=format:'%C(blue)[%aD] %Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias c="clear"
+alias ytb="yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best'"
+alias yt1080="yt-dlp -f 'bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best'"
+alias pf="pfetch"
+alias ls="exa"
+alias ll="exa -l"
+alias lla="exa -la"
+alias tree="exa --tree"
+alias s="sudo systemctl"
+alias off="sudo systemctl poweroff"
+alias reboot="sudo systemctl reboot"
+alias syu="sudo pacman -Syu"
+alias cfh="rsync -harP ~/.clang-format ."
+
+cf() { cd ~/.config/ }
+sd() { cd $(fd -t d . "/" | fzf) }
