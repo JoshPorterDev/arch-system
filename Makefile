@@ -62,6 +62,11 @@ amducode: ## amd ucode
 	$(PACMAN) amd-ucode
 	sudo grub-mkconfig -o /boot/grub/grub.cfg
 
+picom: ## Transparency and Animations
+	$(PACMAN) picom
+	rm -rf $(HOME)/.config/picom
+	$(LN) $(PWD)/config/picom $(HOME)/.config
+
 yay: ## yay aur helper
 	@echo "Installing yay aur helper..."
 	git clone "https://aur.archlinux.org/yay.git"
